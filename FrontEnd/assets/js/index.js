@@ -69,7 +69,8 @@ function createCategories(categories){
     gallery.prepend(divFilters);
 }
 
-
+// on était bloquer sur ce code car quand on cliquer sur les categorie cela nous afficher pas la categorie seule
+// il y avait aussi le fait que categorie 1,2,3 s'afficher en plus des catgeorie avec le nom correcte
 
 getWorks();
 
@@ -85,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 });
 
+//j'ai besoin de savoir a partir d'ici si tout est bon par rapport au login de la page
 
 // fonction pour récuperer l'id utilisateur et le token
 function getAuthorization() {
@@ -137,7 +139,6 @@ window.onload = function() {
     if(isConnected()) {
         // L'utilisateur est connecté
         // Affichez les informations appropriées
-        // Par exemple, vous pouvez cacher le bouton de connexion et afficher le nom de l'utilisateur
         document.getElementById('loginButton').style.display = 'none';
         document.getElementById('username').style.display = 'block';
     } else {
@@ -147,3 +148,5 @@ window.onload = function() {
         document.getElementById('username').style.display = 'none';
     }
 }
+
+//P.S : je n'arrive pas a supprimer la photo qu'on avait rajouter pour verifier si tout fonctionner bien.
